@@ -3,23 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Crack Detection</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="title">
+    <h1>Crack Detection in Concrete Structures</h1>
+  </div>
+  <div class="description">
+    <div class="container">
+      <p>Upload an image of a concrete structure to detect cracks using our AI model:</p>
+      <div class="upload-container">
+        <label for="imageInput" class="upload-label">Choose Image:</label>
+        <input type="file" id="imageInput" accept="image/*">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="previewImage">
+    <img id="preview" style="display:none; max-width:400px;">
+  </div>
+  <hr>
+  <div class="buttons">
+    <button id="detectButton">Detect Cracks</button>
+  </div>
 
-  <h2>Crack Detection Model</h2>
-
-  <input type="file" id="imageInput" accept="image/*">
-
-  <br><br>
-
-  <img id="preview" style="display:none; max-width:400px;">
-
-  <br><br>
-
-  <button id="detectButton">Detect Cracks</button>
-
-  <h3 id="result"></h3>
+  <h3 id="result" class="result"></h3>
 
   <script src="script.js"></script>
 
